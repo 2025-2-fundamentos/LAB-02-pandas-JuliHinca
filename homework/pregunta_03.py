@@ -7,7 +7,7 @@ librerias de pandas para resolver las preguntas.
 import pandas as pd
 
 def pregunta_03():
-    df = pd.read_csv("..\files\input\tbl0.tsv", sep="\t")
+    df = pd.read_csv("files/input/tbl0.tsv", sep="\t")
     return df['c1'].value_counts().sort_index()
 if __name__ == "__main__":
     print(pregunta_03())

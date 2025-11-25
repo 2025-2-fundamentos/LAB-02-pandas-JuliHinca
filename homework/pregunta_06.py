@@ -7,7 +7,7 @@ librerias de pandas para resolver las preguntas.
 import pandas as pd 
 
 def pregunta_06():
-    df = pd.read_csv("..\files\input\tbl1.tsv", sep="\t")
+    df = pd.read_csv("files/input/tbl1.tsv", sep="\t")
     result = sorted(df['c4'].str.upper().unique())
     return result
 if __name__ == "__main__":

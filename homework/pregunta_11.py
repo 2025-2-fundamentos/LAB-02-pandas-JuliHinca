@@ -7,7 +7,7 @@ librerias de pandas para resolver las preguntas.
 import pandas as pd
 
 def pregunta_11():
-     df = pd.read_csv("..\files\input\tbl1.tsv", sep="\t")
+     df = pd.read_csv("files/input/tbl1.tsv", sep="\t")
      result = df.groupby('c0')['c4'].apply(lambda x: ','.join(map(str, sorted(x)))).to_frame().reset_index()
      return result
 if __name__ == "__main__":
